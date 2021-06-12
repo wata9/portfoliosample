@@ -4,37 +4,33 @@ body{
   margin:0px;
   min-width:1076px;
 }
-
-/* [header]のスタイルシート */
-
-.block-header{
-  margin:10px 0;
-  padding:0 20px 10px;
-  box-shadow:0 10px 10px -5px rgba(204,204,204,0.3); 
-}
-
-.block-header a{
-  font-size:40px;
-  color:#000;
-  text-decoration:none;
-  letter-spacing:1px;
-}
 .color-green{
   color:#00abae;
 }
+/* headerのスタイルシート */
+
+.block-header{
+  box-shadow:0 10px 10px -5px rgba(204,204,204,0.3);
+  margin:10px 0;
+  padding:0 20px 0;
+}
+.block-header a{
+  color:#000;
+  font-size:40px;
+  text-decoration:none;
+  letter-spacing: 1px;
+}
+/* mainのスタイルシート */
+
+.block-main{
+  text-align: center;
+  margin:100px 0;
+}
+/* profileのスタイルシート */
 
 .sub-title{
   font-size:32px;
 }
-/* [main]のスタイルシート */
-
-.block-main{
-  text-align:center;
-  margin:100px;
-}
-
-/* [profile]のスタイルシート */
-
 .item-list{
   width:100%;
   max-width:348px;
@@ -43,159 +39,148 @@ body{
 .item-list b{
   display:block;
   font-size:24px;
-  font-weight:normal;
-  margin:20p 0 30px;
+  font-weight: normal;
+  margin:20px 0 30px;
 }
 .item-list p{
   font-size:15px;
-  line-height:normal;
-  text-align:left;
+  line-height: normal;
+  text-align: left;
 }
-.icon-list{
-  list-style:none;
-  width:100%;
-  max-width:247px;
-  margin:30px auto;
-  padding:0;
+.icon-list {
+  list-style: none;
+  width: 100px;
+  max-width: 247px;
+  margin: 30px auto;
+  padding: 0;
   display:flex;
   justify-content:center;
-  align-items:center;
+  align-items: center;
 }
 .icon-list li{
-  margin-right:22px;
+  margin-right: 22px;
 }
 .icon-list li:last-child{
   margin-right:0;
 }
+/* worksのスタイルシート */
 
-/* [works]のスタイルシート */
 .box-works{
   margin:80px 0 0;
 }
-.works-list {
+.works-list{
   list-style:none;
-  width:100%;
-  max-width:1076px;
+  width: 100%;
+  max-width: 1076px;
   margin:30px auto;
   padding:0;
   text-align:left;
-  overflow:hidden;
-  float:left;
-  margin-right:15px;
+  overflow: hidden;
 }
 .works-list li{
-  display:block;
+  display: block;
   width:100%;
-  max-width:348px;
-  float:left;
+  max-width: 348px;
+  float: left;
   margin-right: 15px;
 }
 .works-list li:last-child{
-  margin-right:0;
+  margin-right: 0;
 }
-.works-list li img{
+.works-list img{
   width: 100%;
-  height:100%;
-  border:1px solid #ccc;
+  border: 1px solid #ccc;
 }
-.works-list li h3{
-  font-size:24px;
-  margin:10px 0;
+.works-list h3{
+  font-size: 24px;
+  margin: 10px 0;
 }
-.works-list li span{
-  font-size:18px;
+.worke-list span{
+  font-size: 18px;
 }
 .works-list li .link{
-  display:flex;
+  display: flex;
   justify-content: left;
   align-items: left;
-  margin-top:15px;
+  margin-top: 15px;
 }
 .works-list li .link a{
   background-color: rgb(226,226,226);
-  padding:5px 20px;
-  margin-right:10px;
-  font-size:15px;
+  padding: 5px 20px;
+  margin-right: 10px;
+  font-size: 15px;
   text-decoration: none;
   color: #000;
 }
-/* [footer]のスタイルシート */
-.block-footer p {
-  clear:both;
-  text-align:center;
-  font-size:15px;
+/* footerのスタイルシート */
+
+.block-footer p{
+  text-align: center;
+  font-size: 15px;
   margin:50px 0 20px;
+  clear:both;
 }
 
-/* タブレット用のスタイルシート */
-
-/* @media screen and (max-width: 767px){
-  .sub-title{
-    color:red;
-  }
-} */
 /* スマホ用のスタイルシート */
 
 @media screen and (max-width: 767px){
   body{
-    min-width:100%;
-  }
-  /* [header]のスタイルシート */
-  .block-header{
-    padding:0 10px 10px;
-    box-shadow:0 8px 8px -5px rgba(204,204,204,0.3);
+    min-width: 100%; 
   }  
-  .block-header a{
-    font-size:31px;
+
+  /* headerのスタイルシート */
+
+  .item-list{
+    max-width: 100%;
   }
-  /* [main]のスタイルシート */
+  .icon-list{
+    max-width: 100%;
+  }
+  .block-header{
+    box-shadow:0 8px 8px -5px rgba(204,204,204,0.3);
+    padding:0 10px 10px;
+  }
+  .block-header a{
+    font-size:25px;
+  }
+
+  /* mainのスタイルシート */
+
   .block-main{
     margin:50px 0;
   }
-  /* [profile]のスタイルシート */
+
+  /* profileのスタイルシート */
+  
   .box-profile{
-    padding:0 10px;
+    padding: 0 10px;
   }
   .item-list b{
     font-size:18px;
   }
-  .item-list{
-    max-width:100%;
-  }
-  .sub-title{
-    text-align:center;
-  }
-  .icon-list{
-    max-width:100%;
-  }
   .icon-list li{
-    margin-right:25px;
+    margin-right: 25px;
   }
+
+  /* worksのスタイルシート */
   .works-list{
-    max-width:100%;
+    max-width: 100%;
   }
   .works-list li{
-    max-width:100%;
+    max-width: 100%;
+    float: none;
+    margin-right: 0;
+    margin-bottom: 30px;
   }
-  /* [works]のスタイルシート */
   .box-works{
-    margin:30px 0 0 ;
-    padding:0 10px;
+    margin: 60px 0 0;
+    padding: 0 10px;
   }
-  .works-list {
-    max-width:100%;
+  .box-works h3{
+    margin: 5px 0;
+    font-size: 15px;
   }
-  .works-list li{
-    max-width:100%;
-    float:none;
-    margin-right:0;
-    margin-bottom:30px;
-  }
-  .works-list h3{
-    font-size:20px;
-    margin:5px 0;
-  }
-  .works-list li{
-    font-size:14px;
+  .works-list li span{
+    font-size: 15px;
   }
 }
